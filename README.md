@@ -1,1 +1,6 @@
 # Introduction to Design Patterns
+
+introduction.html is where the presentation can be found
+
+example html files are named according to the design pattern it demonstrates
+e.g. singleton -> singleton.html/singleton.js
