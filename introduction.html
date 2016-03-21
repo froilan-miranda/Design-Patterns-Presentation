@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Desing Patterns</title>
+
+		<meta name="Introduction to Design Patterns">
+		<meta name="author" content="Froilan Miranda">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+			
+				<section><!------------------------------------slide---------------------------------------------->
+					<h1>Design Patterns</h1>
+					<h3>Introduction to Pattern Types</h3>
+					<p>
+						<small>Created by <a href="http://www.zipcoder.io">Froilan Miranda</a></small>
+					</p>
+				</section>
+
+
+				<section><!------------------------------------slide---------------------------------------------->
+					<section>
+						<h3>What are Design Patterns?</h3>
+						<p>
+							A pattern is a reusable solution that can be applied to commonly occurring problems in software design - in our case, in writing JavaScript web applications. Another way of looking at patterns is as templates for how we solve problems - ones that can be used in quite a few difference situation
+						</p>
+					</section>
+					<section>
+						<h3>What are Design Patterns?</h3>
+						<p>
+							Patterns are not exact solutions. It's important that we remember the role of a pattern is merely to provide us with a solution scheme. Patterns don't solve all design problems nor do the replace good software designers, however, they do support them.
+						</p>
+					</section>
+					<section>
+						<h3>What are Design Patterns?</h3>
+						<h4>Advantages patterns have to offer:</h4>
+						<p>
+							Reusing patterns assists in preventing minor issues that can cause magor problems in the application development process.
+						</p>
+					</section>
+					<section>
+						<h3>What are Design Patterns?</h3>
+						<h4>Advantages patterns have to offer:</h4>
+						<p>
+							Patterns can provide generalized solutions, documented in a fashion that doesn't require them to be tied to a specific problem.
+						</p>
+					</section>
+					<section>
+						<h3>What are Design Patterns?</h3>
+						<h4>Advantages patterns have to offer:</h4>
+						<p>
+							Certain patterns can actually decrease the overall file-size footprint of our code by avoiding repetition
+						</p>
+					</section>
+					<section>
+						<h3>What are Design Patterns?</h3>
+						<h4>Advantages patterns have to offer:</h4>
+						<p>
+							Patterns add to a developers vocabulary, which makes communication faster.
+						</p>
+					</section>
+					<section>
+						<h3>What are Design Patterns?</h3>
+						<h4>Advantages patterns have to offer:</h4>
+						<p>
+							Patterns that are frequently used can be improved over time by harnessing the collective experiences other developers using those patterns contribute back to the design pattern community.
+						</p>
+					</section>
+					<section>
+						<h3>What are Design Patterns?</h3>
+						<h2>Categories of Patterns</h2>
+						<ul>
+							<li>Creational Patterns</li>
+							<li>Structural Patterns</li>
+							<li>Behavioural Patterns</li>
+						</ul>
+					</section>
+				</section>
+
+		
+				<section><!------------------------------------slide--------------------------------------------- -->
+					<section>
+						<h3>Creational Design Patterns</h3>
+						<p>
+							Creation design patterns focus on handling object-creation mechanisms where objects are created in a manner suitabled for a given situation
+						</p>
+					</section>
+					<section>
+						<h3>Creational Design Patterns</h3>
+						<p>
+							<ul>
+								<li>Abstract Factory</li>
+								<li>Builder</li>
+								<li>Factory Method</li>
+								<li>Prototype</li>
+								<li>Singleton</li>
+							</ul>
+						</p>
+					</section>
+					<h3>Singleton Pattern</h3>
+					<section>
+						<p>
+							The Singleton pattern is thus known because it restricts instantiation of a class to a single object.
+						</p>
+					</section>					
+					<section>
+						<p>
+							The Singleton pattern can be implemented by creating a class with a method that creates a new instance of the class if one doesn't exist. In the event of an instance already existing, it simply returns a reference to that object.
+						</p>
+					</section>					
+					<section>
+						<p>
+							Singletons differ from static classes (or objects) as we can delay their initialization, generally because they require some information that may not be available during initialization time.
+						</p>
+					</section>
+					<section>
+						<p>
+							Singletons reduce the need for global variables which is particularly important in JavaScript because it limits namespace pollution and associated risk of name collisions.
+						</p>
+					</section>
+					<section>
+						<p>
+							Several other patterns, such as, Factory, Prototype, and Façade are frequently implemented as Singletons when only one instance is needed. 
+						</p>
+					</section>
+				</section>
+
+				<section><!------------------------------------slide--------------------------------------------- -->
+					<section>
+						<h3>Structural Design Patterns</h3>
+						<p>
+							Structural patterns are concerned with object composition and typically identify simple ways to realize relationships between different object
+						</p>
+					</section>
+					<section>
+						<h3>Structural Design Patterns</h3>
+						<p>
+							<ul>
+								<li>Adapter</li>
+								<li>Bridge</li>
+								<li>Composite</li>
+								<li>Decorator</li>
+								<li>Facade</li>
+								<li>Flyweight</li>
+								<li>Proxy</li>
+							</ul>
+						</p>
+					</section>
+				</section>
+
+				<section><!------------------------------------slide--------------------------------------------- -->
+					<section>
+						<h3>Behavioral Design Patterns</h3>
+						<p>
+							Behavioral patterns focus on improving or streamlining the communication between disparate objects in a system
+						</p>
+					</section>
+					<section>
+						<h3>Behavioural Design Patterns</h3>
+						<p>
+							<ul>
+								<li>Chain of Responsibility</li>
+								<li>Command</li>
+								<li>Interpreter</li>
+								<li>Iterator</li>
+								<li>Mediator</li>
+								<li>Memento</li>
+								<li>Observer</li>
+								<li>State</li>
+								<li>Strategy</li>
+								<li>Template Method</li>
+								<li>Visitor</li>
+							</ul>
+						</p>
+					</section>
+				</section>
+
+			</div><!-- slides -->
+		</div><!-- reveal -->
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
