@@ -128,31 +128,70 @@
 							</ul>
 						</p>
 					</section>
-					<h3>Singleton Pattern</h3>
+				</section>
+
+				<section><!------------------------------------slide--------------------------------------------- -->
 					<section>
+						<h2>Singleton Pattern</h2>
+					</section>					
+					<section>
+						<h3>Singleton Pattern</h3>
 						<p>
 							The Singleton pattern is thus known because it restricts instantiation of a class to a single object.
 						</p>
 					</section>					
 					<section>
+						<h3>Singleton Pattern</h3>
 						<p>
 							The Singleton pattern can be implemented by creating a class with a method that creates a new instance of the class if one doesn't exist. In the event of an instance already existing, it simply returns a reference to that object.
 						</p>
 					</section>					
 					<section>
+						<h3>Singleton Pattern</h3>
 						<p>
 							Singletons differ from static classes (or objects) as we can delay their initialization, generally because they require some information that may not be available during initialization time.
 						</p>
 					</section>
 					<section>
+						<h3>Singleton Pattern</h3>
 						<p>
 							Singletons reduce the need for global variables which is particularly important in JavaScript because it limits namespace pollution and associated risk of name collisions.
 						</p>
 					</section>
 					<section>
+						<h3>Singleton Pattern</h3>
 						<p>
 							Several other patterns, such as, Factory, Prototype, and Façade are frequently implemented as Singletons when only one instance is needed. 
 						</p>
+					</section>
+				</section>
+
+				<section><!------------------------------------slide--------------------------------------------- -->
+					<section>
+						<h2>Prototype Pattern</h2>
+					</section>
+					<section>
+						<h3>Prototype Pattern</h3>
+						<p>The Prototype Pattern creates new objects, but rather than creating non-initialized objects it returns objects that are initialized with values it copied from a prototype - or sample - object.</p>
+					</section>
+					<section>
+						<h3>Prototype Pattern</h3>
+						<p>An example of where the Prototype pattern is useful is the initialization of business objects with values that match the default values in the database. The prototype object holds the default values that are copied over into a newly created business object.</p>
+					</section>
+					<section>
+						<h3>Prototype Pattern</h3>
+						<p>Advantages:</p>
+						<ul>
+						    <li>New objects created from the "skeleton" of an existing object inherit references to existing functions on the prototype chain, thus boosting performance and keeping memory footprints to a minimum.</li>
+						    <li>Great for an application where the focus is on object creation</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Prototype Pattern</h3>
+						<p>Disadvantages:</p>
+						<ul>
+						    <li>Overkill for a project that uses very few objects and/or does not have an underlying emphasis on the extension of prototype chains</li>
+						</ul>
 					</section>
 				</section>
 
