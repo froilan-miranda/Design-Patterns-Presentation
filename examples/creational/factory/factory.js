@@ -44,11 +44,11 @@ var movingTruck = carFactory.createVehicle({
 //Test to confirm our truck was created with the vehicleClass/prototype Truck
 //
 //Outputs: true
-console.log( movingTruck instanceof Truck)
+//console.log( movingTruck instanceof Truck)
 
 //Outputs: Truck object of color "red", a "like new" state
 //and a "small" wheelSize
-console.log(movingTruck);
+//console.log(movingTruck);
 
 
 function TruckFactory () {}
@@ -63,8 +63,8 @@ var myBigTruck = truckFactory.createVehicle({
 
 //Confirms that myBigTruck was created with the prototype Truck
 //Outputs: true
-console.log(myBigTruck instanceof Truck);
+//console.log(myBigTruck instanceof Truck);
 
 //Outputs: Truck object with the color "pink", wheelSize "so big"
 // and state "omg. so bad"
-console.log(myBigTruck);
+//console.log(myBigTruck);

@@ -21,8 +21,8 @@ var car = Object.create(vehicle, {
 
 console.log(car.getModel());
 
-/* vehicle.drive = function(){
+vehicle.drive = function(){
 	console.log("Wheeee. I'm driving!");
-} */
+}
 
-//console.log(car.drive());
+console.log(car.drive());

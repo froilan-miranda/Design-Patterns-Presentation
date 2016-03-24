@@ -39,7 +39,7 @@
 		<div class="reveal">
 			<div class="slides">
 
-			
+
 				<section><!------------------------------------slide---------------------------------------------->
 					<h1>Design Patterns</h1>
 					<h3>Introduction to Pattern Types</h3>
@@ -108,7 +108,7 @@
 					</section>
 				</section>
 
-		
+
 				<section><!------------------------------------slide--------------------------------------------- -->
 					<section>
 						<h3>Creational Design Patterns</h3>
@@ -133,19 +133,19 @@
 				<section><!------------------------------------slide--------------------------------------------- -->
 					<section>
 						<h2>Singleton Pattern</h2>
-					</section>					
+					</section>
 					<section>
 						<h3>Singleton Pattern</h3>
 						<p>
 							The Singleton pattern is thus known because it restricts instantiation of a class to a single object.
 						</p>
-					</section>					
+					</section>
 					<section>
 						<h3>Singleton Pattern</h3>
 						<p>
 							The Singleton pattern can be implemented by creating a class with a method that creates a new instance of the class if one doesn't exist. In the event of an instance already existing, it simply returns a reference to that object.
 						</p>
-					</section>					
+					</section>
 					<section>
 						<h3>Singleton Pattern</h3>
 						<p>
@@ -161,7 +161,7 @@
 					<section>
 						<h3>Singleton Pattern</h3>
 						<p>
-							Several other patterns, such as, Factory, Prototype, and Façade are frequently implemented as Singletons when only one instance is needed. 
+							Several other patterns, such as, Factory, Prototype, and Façade are frequently implemented as Singletons when only one instance is needed.
 						</p>
 					</section>
 				</section>
@@ -197,6 +197,51 @@
 
 				<section><!------------------------------------slide--------------------------------------------- -->
 					<section>
+						<h2>Factory Pattern</h2>
+					</section>
+					<section>
+						<h3>Factory Pattern</h3>
+						<p>A Factory Method creates new objects as instructed by the client.</p>
+					</section>
+					<section>
+						<h3>Factory Pattern</h3>
+						<p>The Factory Method allows the client to delegate object creation while still retaining control over which type to instantiate.</p>
+					</section>
+					<section>
+						<h3>Factory Pattern</h3>
+						<p>A Factory can provide a generic interface for creating objects, where we can specify the type of factory object we wish to be created.</p>
+					</section>
+					<section>
+						<h3>Factory Pattern</h3>
+						<p>This is particularly useful if the object creatioin process is relatively complex - e.g., if it strongly depends on dynamic factors or application configuration.</p>
+					</section>
+					<section>
+						<h3>Factory Pattern</h3>
+						<p>The key objective of the Factory Method is extensibility. Factory Methods are frequently used in applications that manage, maintain, or manipulate collections of objects that are different but at the same time have many characteristics (i.e. methods and properties) in common.</p>
+					</section>
+					<section>
+						<h3>Factory Pattern</h3>
+						<p>An example would be a collection of documents with a mix of Xml documents, Pdf documents, and Rtf documents.</p>
+					</section>
+					<section>
+						<h3>Factory Pattern</h3>
+						<p>When to use:
+							<ul>
+								<li>When our object or component setup involves a high level of complexity</li>
+								<li>When we need to easily generate different instances of objects depending on the environment we are in.</li>
+								<li>When we're working with may small objects or components that share the same properties.</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<h3>Factory Pattern</h3>
+						<p>When not to use:</p>
+						<p>When applied to the wrong type of problem, this pattern can introduce an unnecessarily great deal of complexity to an application. Unless providing an interface for object creation is a design goal for the library or framework we are writing, I would suggest sticking to explicit constructors to avoid the unnecessary overhead.</p>
+					</section>
+				</section>
+
+				<section><!------------------------------------slide--------------------------------------------- -->
+					<section>
 						<h3>Structural Design Patterns</h3>
 						<p>
 							Structural patterns are concerned with object composition and typically identify simple ways to realize relationships between different object
@@ -215,6 +260,27 @@
 								<li>Proxy</li>
 							</ul>
 						</p>
+					</section>
+				</section>
+				<section><!------------------------------------slide--------------------------------------------- -->
+					<section>
+						<h2>Decorator Pattern</h2>
+					</section>
+					<section>
+						<h3>Decorator Pattern</h3>
+						<p>Decorators are a structural design pattern that aim to promote code reuse. Similar to Mixins, they can be considered another viable alternative to object subclassing.</p>
+					</section>
+					<section>
+						<h3>Decorator Pattern</h3>
+						<p>Decorators offer the ability to add behavior to existing classes in a system dynamically.</p>
+					</section>
+					<section>
+						<h3>Decorator Pattern</h3>
+						<p>The idea is that the decoration itself isn't essential to the base functionality of the class; otherwise, it would be baked into the <i>superclass</i> itself.</p>
+					</section>
+					<section>
+						<h3>Decorator Pattern</h3>
+						<p>They can be used to modify existing systems where we wish to add additional features to objects without the need to heavily modify the underlying code using them.</p>
 					</section>
 				</section>
 

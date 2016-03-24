@@ -16,11 +16,11 @@ var yourCar = Object.create( myCar );
 //Now we can see that one is a prototype of the other
 console.log(yourCar.name);
 
-//myCar.name = "Honda Civic";
+myCar.name = "Honda Civic";
 
-//console.log(yourCar.name);
+console.log(yourCar.name);
 
-//yourCar.name = "Ford Escort";
+yourCar.name = "Ford Escort";
 
-//console.log(myCar.name);
+console.log(myCar.name);
 
