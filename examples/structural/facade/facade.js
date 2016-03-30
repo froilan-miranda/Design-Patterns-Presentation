@@ -8,4 +8,4 @@ var addMyEvent = function( el,ev,fn ) {
     el["on" + ev] = fn;
   }
 
-}
+};

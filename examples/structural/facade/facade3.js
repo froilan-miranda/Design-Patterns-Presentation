@@ -1,6 +1,6 @@
 var Mortgage = function(name) {
     this.name = name;
-}
+};
 
 Mortgage.prototype = {
 
@@ -17,28 +17,28 @@ Mortgage.prototype = {
         return this.name + " has been " + result +
                " for a " + amount + " mortgage";
     }
-}
+};
 
 var Bank = function() {
     this.verify = function(name, amount) {
         // complex logic ...
         return true;
-    }
-}
+    };
+};
 
 var Credit = function() {
     this.get = function(name) {
         // complex logic ...
         return true;
-    }
-}
+    };
+};
 
 var Background = function() {
     this.check = function(name) {
         // complex logic ...
         return true;
-    }
-}
+    };
+};
 
 function run() {
     var mortgage = new Mortgage("Joan Templeton");
