@@ -1,17 +1,18 @@
 var module = (function() {
+
 	var _private = {
 		i: 5,
 		get : function(){
-			console.log("current value:" + this.i);
+			console.log('current value:' + this.i);
 		},
 		set : function(val){
 			this.i = val;
 		},
 		run : function(){
-			console.log("running");
+			console.log('running');
 		},
 		jump : function(){
-			console.log("jumping");
+			console.log('jumping');
 		}
 	};
 
